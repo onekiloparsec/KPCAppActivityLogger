@@ -7,13 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F1E5A9B1CF1A1CC00D18959 /* KPCAppActivityLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1E5A9A1CF1A1CC00D18959 /* KPCAppActivityLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F1E5AA41CF1A40900D18959 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */; };
+		9F1E5AA61CF1A41E00D18959 /* AppActivityLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E5AA51CF1A41E00D18959 /* AppActivityLogger.swift */; };
+		9F1E5AA81CF1AC0B00D18959 /* AppActivityWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1E5AA71CF1AC0B00D18959 /* AppActivityWindowController.swift */; };
+		9F1E5AAA1CF1AC8800D18959 /* ActivityLoggerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1E5AA91CF1AC8800D18959 /* ActivityLoggerWindow.xib */; };
+		9F96285C1CF1B8FD008092B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96285B1CF1B8FD008092B7 /* AppDelegate.swift */; };
+		9F96285E1CF1B8FD008092B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96285D1CF1B8FD008092B7 /* ViewController.swift */; };
+		9F9628601CF1B8FD008092B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F96285F1CF1B8FD008092B7 /* Assets.xcassets */; };
+		9F9628631CF1B8FD008092B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9628611CF1B8FD008092B7 /* Main.storyboard */; };
+		9F9628701CF1BB5A008092B7 /* CocoaLumberjackSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F9628781CF1BC37008092B7 /* KPCAppActivityLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5A971CF1A1CC00D18959 /* KPCAppActivityLogger.framework */; };
+		9F9628791CF1BC37008092B7 /* KPCAppActivityLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5A971CF1A1CC00D18959 /* KPCAppActivityLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F96287D1CF1BC41008092B7 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */; };
+		9F96287E1CF1BC41008092B7 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F9628801CF1BEA8008092B7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96287F1CF1BEA8008092B7 /* CocoaLumberjack.framework */; };
+		9F9628811CF1BEB1008092B7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96287F1CF1BEA8008092B7 /* CocoaLumberjack.framework */; };
+		9F9628821CF1BEB1008092B7 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96287F1CF1BEA8008092B7 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F96287A1CF1BC37008092B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F1E5A8E1CF1A1CC00D18959 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1E5A961CF1A1CC00D18959;
+			remoteInfo = KPCAppActivityLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F96286F1CF1BB46008092B7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F9628701CF1BB5A008092B7 /* CocoaLumberjackSwift.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F96287C1CF1BC37008092B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F96287E1CF1BC41008092B7 /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				9F9628821CF1BEB1008092B7 /* CocoaLumberjack.framework in Embed Frameworks */,
+				9F9628791CF1BC37008092B7 /* KPCAppActivityLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F1E5A971CF1A1CC00D18959 /* KPCAppActivityLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KPCAppActivityLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F1E5A9A1CF1A1CC00D18959 /* KPCAppActivityLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KPCAppActivityLogger.h; sourceTree = "<group>"; };
 		9F1E5A9C1CF1A1CC00D18959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/Mac/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		9F1E5AA51CF1A41E00D18959 /* AppActivityLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppActivityLogger.swift; sourceTree = "<group>"; };
+		9F1E5AA71CF1AC0B00D18959 /* AppActivityWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppActivityWindowController.swift; sourceTree = "<group>"; };
+		9F1E5AA91CF1AC8800D18959 /* ActivityLoggerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityLoggerWindow.xib; sourceTree = "<group>"; };
+		9F9628591CF1B8FD008092B7 /* KPCAppActivityLoggerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KPCAppActivityLoggerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F96285B1CF1B8FD008092B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F96285D1CF1B8FD008092B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F96285F1CF1B8FD008092B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F9628621CF1B8FD008092B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F9628641CF1B8FD008092B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F96287F1CF1BEA8008092B7 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +83,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9628801CF1BEA8008092B7 /* CocoaLumberjack.framework in Frameworks */,
+				9F1E5AA41CF1A40900D18959 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9628561CF1B8FD008092B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F96287D1CF1BC41008092B7 /* CocoaLumberjackSwift.framework in Frameworks */,
+				9F9628811CF1BEB1008092B7 /* CocoaLumberjack.framework in Frameworks */,
+				9F9628781CF1BC37008092B7 /* KPCAppActivityLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				9F1E5A991CF1A1CC00D18959 /* KPCAppActivityLogger */,
+				9F96285A1CF1B8FD008092B7 /* KPCAppActivityLoggerDemo */,
 				9F1E5A981CF1A1CC00D18959 /* Products */,
+				9F1E5AA21CF1A3F400D18959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9F1E5A971CF1A1CC00D18959 /* KPCAppActivityLogger.framework */,
+				9F9628591CF1B8FD008092B7 /* KPCAppActivityLoggerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +123,33 @@
 		9F1E5A991CF1A1CC00D18959 /* KPCAppActivityLogger */ = {
 			isa = PBXGroup;
 			children = (
-				9F1E5A9A1CF1A1CC00D18959 /* KPCAppActivityLogger.h */,
+				9F1E5AA51CF1A41E00D18959 /* AppActivityLogger.swift */,
+				9F1E5AA71CF1AC0B00D18959 /* AppActivityWindowController.swift */,
+				9F1E5AA91CF1AC8800D18959 /* ActivityLoggerWindow.xib */,
 				9F1E5A9C1CF1A1CC00D18959 /* Info.plist */,
 			);
 			path = KPCAppActivityLogger;
+			sourceTree = "<group>";
+		};
+		9F1E5AA21CF1A3F400D18959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F96287F1CF1BEA8008092B7 /* CocoaLumberjack.framework */,
+				9F1E5AA31CF1A40900D18959 /* CocoaLumberjackSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F96285A1CF1B8FD008092B7 /* KPCAppActivityLoggerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9F96285B1CF1B8FD008092B7 /* AppDelegate.swift */,
+				9F96285D1CF1B8FD008092B7 /* ViewController.swift */,
+				9F96285F1CF1B8FD008092B7 /* Assets.xcassets */,
+				9F9628611CF1B8FD008092B7 /* Main.storyboard */,
+				9F9628641CF1B8FD008092B7 /* Info.plist */,
+			);
+			path = KPCAppActivityLoggerDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +159,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1E5A9B1CF1A1CC00D18959 /* KPCAppActivityLogger.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +173,7 @@
 				9F1E5A931CF1A1CC00D18959 /* Frameworks */,
 				9F1E5A941CF1A1CC00D18959 /* Headers */,
 				9F1E5A951CF1A1CC00D18959 /* Resources */,
+				9F96286F1CF1BB46008092B7 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,16 +184,39 @@
 			productReference = 9F1E5A971CF1A1CC00D18959 /* KPCAppActivityLogger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		9F9628581CF1B8FD008092B7 /* KPCAppActivityLoggerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F9628671CF1B8FD008092B7 /* Build configuration list for PBXNativeTarget "KPCAppActivityLoggerDemo" */;
+			buildPhases = (
+				9F9628551CF1B8FD008092B7 /* Sources */,
+				9F9628561CF1B8FD008092B7 /* Frameworks */,
+				9F9628571CF1B8FD008092B7 /* Resources */,
+				9F96287C1CF1BC37008092B7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F96287B1CF1BC37008092B7 /* PBXTargetDependency */,
+			);
+			name = KPCAppActivityLoggerDemo;
+			productName = KPCAppActivityLoggerDemo;
+			productReference = 9F9628591CF1B8FD008092B7 /* KPCAppActivityLoggerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9F1E5A8E1CF1A1CC00D18959 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = onekiloparsec;
 				TargetAttributes = {
 					9F1E5A961CF1A1CC00D18959 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9F9628581CF1B8FD008092B7 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -104,6 +227,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9F1E5A8D1CF1A1CC00D18959;
 			productRefGroup = 9F1E5A981CF1A1CC00D18959 /* Products */;
@@ -111,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				9F1E5A961CF1A1CC00D18959 /* KPCAppActivityLogger */,
+				9F9628581CF1B8FD008092B7 /* KPCAppActivityLoggerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +245,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1E5AAA1CF1AC8800D18959 /* ActivityLoggerWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9628571CF1B8FD008092B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F9628601CF1B8FD008092B7 /* Assets.xcassets in Resources */,
+				9F9628631CF1B8FD008092B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,10 +265,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1E5AA81CF1AC0B00D18959 /* AppActivityWindowController.swift in Sources */,
+				9F1E5AA61CF1A41E00D18959 /* AppActivityLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F9628551CF1B8FD008092B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F96285E1CF1B8FD008092B7 /* ViewController.swift in Sources */,
+				9F96285C1CF1B8FD008092B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F96287B1CF1BC37008092B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F1E5A961CF1A1CC00D18959 /* KPCAppActivityLogger */;
+			targetProxy = 9F96287A1CF1BC37008092B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F9628611CF1B8FD008092B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F9628621CF1B8FD008092B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9F1E5A9D1CF1A1CC00D18959 /* Debug */ = {
@@ -227,11 +392,40 @@
 		9F1E5AA01CF1A1CC00D18959 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KPCAppActivityLogger/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCAppActivityLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F1E5AA11CF1A1CC00D18959 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = KPCAppActivityLogger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -240,23 +434,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		9F1E5AA11CF1A1CC00D18959 /* Release */ = {
+		9F9628651CF1B8FD008092B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = KPCAppActivityLogger/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCAppActivityLogger;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = KPCAppActivityLoggerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCAppActivityLoggerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9F9628661CF1B8FD008092B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = KPCAppActivityLoggerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onekiloparsec.KPCAppActivityLoggerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -277,6 +487,15 @@
 			buildConfigurations = (
 				9F1E5AA01CF1A1CC00D18959 /* Debug */,
 				9F1E5AA11CF1A1CC00D18959 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F9628671CF1B8FD008092B7 /* Build configuration list for PBXNativeTarget "KPCAppActivityLoggerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F9628651CF1B8FD008092B7 /* Debug */,
+				9F9628661CF1B8FD008092B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
