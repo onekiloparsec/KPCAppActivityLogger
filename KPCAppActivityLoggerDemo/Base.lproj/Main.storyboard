@@ -674,7 +674,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y7I-cy-3CI">
-                                <rect key="frame" x="156" y="118" width="168" height="32"/>
+                                <rect key="frame" x="156" y="163" width="168" height="32"/>
                                 <buttonCell key="cell" type="push" title="Open Activity Logger" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pga-VT-UYe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -683,12 +683,42 @@
                                     <action selector="openAppLogger:" target="XfG-lQ-9wD" id="Wpx-mT-OtG"/>
                                 </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="utp-Ed-TNd">
+                                <rect key="frame" x="20" y="89" width="440" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xSm-cd-M6v">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2GC-sX-1E8">
+                                <rect key="frame" x="156" y="53" width="168" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="j0i-da-Gz5"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Append Message" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UpU-Ik-L8m">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="appendToLogger:" target="XfG-lQ-9wD" id="2a7-ap-DoB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="y7I-cy-3CI" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="6f4-R9-4kN"/>
-                            <constraint firstItem="y7I-cy-3CI" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="wGO-RW-8Md"/>
+                            <constraint firstItem="utp-Ed-TNd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="8JO-gQ-ZJN"/>
+                            <constraint firstItem="2GC-sX-1E8" firstAttribute="top" secondItem="utp-Ed-TNd" secondAttribute="bottom" constant="8" symbolic="YES" id="DjL-51-VDk"/>
+                            <constraint firstItem="utp-Ed-TNd" firstAttribute="centerX" secondItem="2GC-sX-1E8" secondAttribute="centerX" id="RGH-cg-B0q"/>
+                            <constraint firstItem="utp-Ed-TNd" firstAttribute="top" secondItem="y7I-cy-3CI" secondAttribute="bottom" constant="59" id="iGU-VI-EUb"/>
+                            <constraint firstItem="utp-Ed-TNd" firstAttribute="centerX" secondItem="y7I-cy-3CI" secondAttribute="centerX" id="lIg-hC-C0I"/>
+                            <constraint firstItem="y7I-cy-3CI" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" constant="-45.5" id="wGO-RW-8Md"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appendButton" destination="2GC-sX-1E8" id="5b5-EL-gZB"/>
+                        <outlet property="textField" destination="utp-Ed-TNd" id="Evk-0Q-9sj"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -91,10 +91,37 @@ public class AppActivityLogger: DDFileLogger {
             self.windowController = AppActivityWindowController.newWindowController(withLogger: self)
         }
         self.windowController!.showWindow(self)
+        self.windowController!.window?.makeKeyAndOrderFront(self);
     }
     
-    func logFullContent() -> String {
-        return "hey"
+//    func logMessage(message: String, level: DDLogLevel) {
+//        switch level {
+//        case .Off: break
+//        case .Error:
+//            DDLogError(message)
+//        case .Warning:
+//            DDLogWarn(message)
+//        case .Info:
+//            DDLogInfo(message)
+//        case .Debug:
+//            DDLogDebug(message)
+//        case .Verbose:
+//            DDLogVerbose(message)
+//        case .All:
+//            DDLogError(message)
+//            DDLogWarn(message)
+//            DDLogInfo(message)
+//            DDLogDebug(message)
+//            DDLogVerbose(message)
+//        }
+//    }
+    
+    public func logError(message: String) {
+        DDLogError(message);
+    }
+
+    public func logInfo(message: String) {
+        DDLogInfo(message);
     }
 }
 

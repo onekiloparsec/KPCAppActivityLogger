@@ -7,8 +7,12 @@
 //
 
 import Cocoa
+import KPCAppActivityLogger
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var textField: NSTextField?
+    @IBOutlet weak var appendButton: NSButton?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,15 @@ class ViewController: NSViewController {
     @IBAction func openAppLogger(sender: AnyObject?) {
         let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.appLogger?.openActivityLogger(sender)
+    }
+
+    @IBAction func appendToLogger(sender: AnyObject?) {
+        if let message = self.textField?.stringValue {
+            let appDelegate = NSApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.appLogger?.logInfo(message)
+            self.textField?.stringValue = ""
+            print("\(message)")
+        }
     }
 
 }
