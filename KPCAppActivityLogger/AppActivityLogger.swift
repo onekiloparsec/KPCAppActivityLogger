@@ -80,7 +80,7 @@ public class AppActivityLogger: DDFileLogger {
         DDLogInfo(message)
         NSNotificationCenter.defaultCenter().postNotificationName(AppActivityLoggerDidUpdateNotification, object: self)
     }
-    
+        
     public func logFinalQuit() {
         DDLogInfo("Final Quit")
         NSNotificationCenter.defaultCenter().postNotificationName(AppActivityLoggerDidUpdateNotification, object: self)
@@ -93,29 +93,7 @@ public class AppActivityLogger: DDFileLogger {
         self.windowController!.showWindow(self)
         self.windowController!.window?.makeKeyAndOrderFront(self);
     }
-    
-//    func logMessage(message: String, level: DDLogLevel) {
-//        switch level {
-//        case .Off: break
-//        case .Error:
-//            DDLogError(message)
-//        case .Warning:
-//            DDLogWarn(message)
-//        case .Info:
-//            DDLogInfo(message)
-//        case .Debug:
-//            DDLogDebug(message)
-//        case .Verbose:
-//            DDLogVerbose(message)
-//        case .All:
-//            DDLogError(message)
-//            DDLogWarn(message)
-//            DDLogInfo(message)
-//            DDLogDebug(message)
-//            DDLogVerbose(message)
-//        }
-//    }
-    
+        
     public func logError(message: String) {
         DDLogError(message);
     }
